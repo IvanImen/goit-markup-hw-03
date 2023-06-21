@@ -1,0 +1,324 @@
+/* Primary Brand */
+:root {
+  --iris-color: #4d5ae5;
+  --ocean-color: #404bbf;
+  --navy-blue-color: #2e2f42;
+  --green-color: #31d0aa;
+  --slate-color: #434455;
+  --light-slate-color: #8e8f99;
+  --cornflower-color: #e7e9fc;
+  --cloud-color: #f4f4fd;
+  --navy-blue-modal: #2e2f42;
+  --grey-color: #2e2f42;
+  --white-color: #ffffff;
+  --dairy-color: #fcfcfc;
+}
+
+/**
+  |============================
+  | Comon rules
+  |============================
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--slate-color);
+  background-color: var(--white-color);
+  line-height: 1.5;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.list {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.button {
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+/**
+  |============================
+  | header
+  |============================
+*/
+
+/* .header {
+} */
+
+/* .header-nav {
+} */
+
+.header-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+}
+
+.header-logo-accent {
+  color: var(--navy-blue-color);
+}
+
+/* .header-nav-list {
+} */
+
+/* .header-nav-item {
+} */
+
+.header-nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--ocean-color);
+}
+
+/* .header-address {
+} */
+
+/* .header-address-list {
+} */
+
+/* .header-address-item {
+} */
+
+.header-address-link {
+  letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | First section
+  |============================
+*/
+
+.hero {
+  background-color: var(--navy-blue-color);
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
+}
+
+.hero-button {
+  background-color: var(--iris-color);
+  font-weight: 500;
+  /* line-height: 1.5; */
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--ocean-color);
+}
+
+/**
+  |============================
+  | SwiftTech section
+  |============================
+*/
+
+/* .swifttech {
+} */
+
+/* .swifttech-title {
+} */
+
+/* .swifttech-list {
+} */
+
+/* .swifttech-item {
+} */
+
+.swifttech-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.swifttech-text {
+  letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | What are we doing section
+  |============================
+*/
+
+/* .doing {
+} */
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+/* .doing-list {
+} */
+
+/* .doing-item {
+} */
+
+/* .doing-img {
+} */
+
+/**
+  |============================
+  | Team section
+  |============================
+*/
+
+.team {
+  background-color: var(--cloud-color);
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--navy-blue-color);
+}
+
+/* .team-list {
+} */
+
+.team-item {
+  background-color: var(--white-color);
+}
+
+/* .team-img {
+} */
+
+.team-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.team-text {
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/**
+  |============================
+  | footer
+  |============================
+*/
+
+.footer {
+  background-color: var(--navy-blue-color);
+}
+.footer-logo-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris-color);
+}
+
+.footer-logo-accent {
+  color: var(--cloud-color);
+}
+.footer-text {
+  letter-spacing: 0.02em;
+  color: var(--cloud-color);
+}
+
+/**
+  |============================
+  | Portfolio buttons
+  |============================
+*/
+
+/* .filter-list {
+} */
+
+/* .filter-item {
+} */
+
+.portfolio-button {
+  background-color: var(--cloud-color);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--iris-color);
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--ocean-color);
+  color: var(--white-color);
+}
+
+/**
+  |============================
+  | Portfolio gallery
+  |============================
+*/
+/* .portfolio-list {
+} */
+
+/* .portfolio-item {
+} */
+
+/* .portfolio-link {
+} */
+
+/* .portfolio-img {
+} */
+
+.gallery-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+}
+
+.gallery-text {
+  letter-spacing: 0.02em;
+}
