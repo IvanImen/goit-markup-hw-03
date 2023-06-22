@@ -33,7 +33,8 @@ body {
   |============================
 */
 
-ul {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -50,6 +51,25 @@ h6 {
 
 p {
   margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .link {
@@ -71,17 +91,32 @@ address {
   line-height: 1.5;
 }
 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 /**
   |============================
   | header
   |============================
 */
 
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 /* .header {
 } */
 
-/* .header-nav {
-} */
+.header-nav {
+  display: flex;
+  gap: 76px;
+}
 
 .header-logo-link {
   font-family: 'Raleway', sans-serif;
@@ -97,8 +132,10 @@ address {
   color: var(--navy-blue-color);
 }
 
-/* .header-nav-list {
-} */
+.header-nav-list {
+  display: flex;
+  gap: 40px;
+}
 
 /* .header-nav-item {
 } */
@@ -117,8 +154,10 @@ address {
 /* .header-address {
 } */
 
-/* .header-address-list {
-} */
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
 
 /* .header-address-item {
 } */
@@ -138,6 +177,11 @@ address {
   |============================
 */
 
+.container-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
 .hero {
   background-color: var(--navy-blue-color);
 }
@@ -149,14 +193,21 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
+  width: 496px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button {
+  display: block;
   background-color: var(--iris-color);
   font-weight: 500;
   /* line-height: 1.5; */
   letter-spacing: 0.04em;
   color: var(--white-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-button:hover,
@@ -176,8 +227,12 @@ address {
 /* .swifttech-title {
 } */
 
-/* .swifttech-list {
-} */
+.swifttech-list {
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  justify-content: space-between;
+}
 
 /* .swifttech-item {
 } */
@@ -211,10 +266,13 @@ address {
   text-transform: capitalize;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 72px;
 }
 
-/* .doing-list {
-} */
+.doing-list {
+  display: flex;
+  padding-bottom: 120px;
+}
 
 /* .doing-item {
 } */
@@ -240,10 +298,13 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue-color);
+  padding-top: 120px;
+  margin-bottom: 72px;
 }
 
-/* .team-list {
-} */
+.team-list {
+  display: flex;
+}
 
 .team-item {
   background-color: var(--white-color);
@@ -272,6 +333,12 @@ address {
   |============================
 */
 
+.container-footer {
+  padding-left: 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .footer {
   background-color: var(--navy-blue-color);
 }
@@ -283,6 +350,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-accent {
@@ -291,6 +360,7 @@ address {
 .footer-text {
   letter-spacing: 0.02em;
   color: var(--cloud-color);
+  width: 264px;
 }
 
 /**
@@ -299,8 +369,13 @@ address {
   |============================
 */
 
-/* .filter-list {
-} */
+.filter-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 96px;
+  gap: 24px;
+  margin-bottom: 72px;
+}
 
 /* .filter-item {
 } */
@@ -324,8 +399,11 @@ address {
   | Portfolio gallery
   |============================
 */
-/* .portfolio-list {
-} */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
 
 /* .portfolio-item {
 } */
