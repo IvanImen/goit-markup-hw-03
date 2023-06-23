@@ -118,6 +118,7 @@ address {
 .header-nav {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 
 .header-logo-link {
@@ -128,6 +129,7 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris-color);
+  margin-right: 76px;
 }
 
 .header-logo-accent {
@@ -181,14 +183,13 @@ address {
   |============================
 */
 
-.container-hero {
-  padding-top: 188px;
-  padding-bottom: 188px;
-}
-
 .hero {
   background-color: var(--navy-blue-color);
+  padding: 188px 0 188px;
 }
+
+/* .container-hero {
+} */
 
 .hero-title {
   font-weight: 500;
@@ -197,10 +198,10 @@ address {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-color);
-  width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 496px;
 }
 
 .hero-button {
@@ -212,7 +213,7 @@ address {
   margin-left: auto;
   margin-right: auto;
   padding: 16px 32px;
-  min-width: 168px;
+  min-width: 169px;
   height: 56px;
   border-radius: 4px;
   border: 0px;
@@ -229,22 +230,21 @@ address {
   |============================
 */
 
-/* .swifttech {
-} */
+.swifttech {
+  padding: 120px 0 120px;
+}
 
 /* .swifttech-title {
 } */
 
 .swifttech-list {
   display: flex;
-  padding-top: 120px;
-  padding-bottom: 120px;
   justify-content: space-between;
-  gap: 24px;
 }
 
-/* .swifttech-item {
-} */
+.swifttech-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
 
 .swifttech-subtitle {
   font-weight: 500;
@@ -252,6 +252,7 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
+  margin-bottom: 8px;
 }
 
 .swifttech-text {
@@ -264,8 +265,9 @@ address {
   |============================
 */
 
-/* .doing {
-} */
+.doing {
+  padding-bottom: 120px;
+}
 
 .doing-title {
   font-weight: 700;
@@ -280,7 +282,6 @@ address {
 
 .doing-list {
   display: flex;
-  padding-bottom: 120px;
   gap: 24px;
 }
 
@@ -298,7 +299,11 @@ address {
 
 .team {
   background-color: var(--cloud-color);
+  padding: 120px 0px 120px;
 }
+
+/* .container-team {
+} */
 
 .team-title {
   font-weight: 700;
@@ -308,14 +313,12 @@ address {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--navy-blue-color);
-  padding-top: 120px;
   margin-bottom: 72px;
 }
 
 .team-list {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 
 .team-item {
@@ -328,7 +331,7 @@ address {
 } */
 
 .team-description {
-  padding: 16px 32px;
+  padding: 32px 16px;
 }
 
 .team-subtitle {
@@ -354,13 +357,13 @@ address {
 
 .container-footer {
   padding-left: 156px;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .footer {
   background-color: var(--navy-blue-color);
+  padding: 100px 0;
 }
+
 .footer-logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 800;
@@ -388,10 +391,13 @@ address {
   |============================
 */
 
+.portfolio {
+  padding: 96px 0 120px;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 96px;
   gap: 24px;
   margin-bottom: 72px;
 }
@@ -429,7 +435,6 @@ address {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 120px;
   row-gap: 48px;
   column-gap: 24px;
 }
