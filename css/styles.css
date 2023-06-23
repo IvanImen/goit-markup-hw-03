@@ -240,6 +240,7 @@ address {
 .swifttech-list {
   display: flex;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .swifttech-item {
@@ -442,8 +443,7 @@ address {
 .portfolio-description {
   border: 1px solid var(--cornflower-color);
   border-top: 0px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding: 32px 16px;
 }
 
 /* .portfolio-item {
